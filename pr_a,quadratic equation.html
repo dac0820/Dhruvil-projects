@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Quadratic Equation Solver</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        // Prompt the user for input
+let a = parseFloat(prompt("Enter the coefficient for x^2 (a):"));
+let b = parseFloat(prompt("Enter the coefficient for x (b):"));
+let c = parseFloat(prompt("Enter the constant term (c):"));
+
+// Calculate the discriminant
+let discriminant = b * b - 4 * a * c;
+
+if (discriminant > 0) {
+    // Two distinct real roots
+    let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+    let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+    document.getElementById("demo").innerHTML = `The roots of the quadratic equation are ${root1.toFixed(2)} and ${root2.toFixed(2)}.`;
+} else if (discriminant === 0) {
+    // One real root (repeated)
+    let root = -b / (2 * a);
+    document.getElementById("demo").innerHTML = `The quadratic equation has a repeated root at x = ${root.toFixed(2)}.`;
+} else {
+    // Complex roots
+    let realPart = (-b / (2 * a)).toFixed(2);
+    let imagPart = (Math.sqrt(Math.abs(discriminant)) / (2 * a)).toFixed(2);
+    document.getElementById("demo").innerHTML = `The roots of the quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i.`;
+}
+
+</script>
+<script>
+    const num1 = parseFloat(prompt("Enter the first number: "));
+const num2 = parseFloat(prompt("Enter the second number: "));
+const num3 = parseFloat(prompt("Enter the third number: "));
+
+const largest = Math.max(num1, num2, num3);
+
+document.getElementById("demo1").innerHTML += largest+" is highest";
+
+</script>
+</body>
+</html>
+

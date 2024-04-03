@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body>
+    <div class="calculator">
+        <p id="result">
+        <input type="number" id="base" placeholder="Enter base number">power
+        <input type="number" id="exponent" placeholder="Enter exponent">
+        <button onclick="calculatePower()">Calculate</button>
+        </p>
+    </div>
+    <script>
+    function calculatePower() {
+    const base = parseFloat(document.getElementById('base').value);
+    const exponent = parseInt(document.getElementById('exponent').value);
+
+    if (!isNaN(base) && !isNaN(exponent)) {
+        const result = Math.pow(base, exponent);
+        document.getElementById('result').innerHTML = `Result: ${result}`;
+    } else {
+        document.getElementById('result').innerHTML = 'Please enter valid numbers.';
+    }
+}
+</script>
+</body>
+</html>
