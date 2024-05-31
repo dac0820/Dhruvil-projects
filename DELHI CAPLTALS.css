@@ -1,0 +1,49 @@
+body {
+    background-image: url(https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/DC/Logos/LogoOutline/DCoutline.png);
+  }
+  h1{
+   color: #0821fb;
+ text-align: center;
+  background-color: #5ebfc6;
+    
+  }
+ .hedder{
+    color :#ffc107;
+    background-color: aqua;
+ }
+ 
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .player-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(171, 25, 25, 0.1);
+    transition: all 1s ease;
+  }
+  
+  .player-box img {
+    width: 200px;
+    height: 250px;
+    border-radius: 75%;
+  }
+  
+  .player-box p {
+    margin-top: 20px;
+  }
+  
+  .best {
+    background-color: rgba(47, 203, 231, 0.959); /* Set color for the best player box */
+  }
+  
+  .best:hover {
+    transform: scale(1.1); /* Add animation on hover */
+  }
+  

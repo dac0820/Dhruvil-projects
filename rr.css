@@ -1,0 +1,47 @@
+body {
+    background-color: #81c3df;
+  }
+  h1{
+    color : #e50dab;
+ text-align: center;
+ background-color: #220f83;
+    
+  }
+ .hedder{
+    color :#ffc107;
+    background-color: rgb(21,8,170);
+ }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .player-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(239, 0, 0, 0.1);
+    transition: all 2s ease;
+  }
+  
+  .player-box img {
+    width: 200px;
+    height: 250px;
+    border-radius: 75%;
+  }
+  
+  .player-box p {
+    margin-top: 20px;
+  }
+  
+  .best {
+    background-color: #e50dab; /* Set color for the best player box */
+  }
+  
+  .best:hover {
+    transform: scale(1.1); /* Add animation on hover */
+  }

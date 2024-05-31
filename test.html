@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCB Players</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: red; /* Set overall background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .player-box {
+            width: 200px;
+            height: 250px;
+            background-color: skyblue; /* Set player box color */
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+        .player-box:hover {
+            transform: scale(1.1); /* Animation: grow on hover */
+        }
+        .player-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .player-name {
+            font-weight: bold;
+        }
+        .class-a {
+            color: aqua; /* Corrected class name */
+        }
+    </style>
+</head>
+<body>
+    <!-- Player Box -->
+    <div class="player-box">
+        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2024/94.png" alt="Faf du Plessis" class="player-photo">
+        <h1 class="class-a">Captain</h1>
+        <h2>FAF DU PLESSIS</h2>
+        <h4>Batter</h4>
+    </div>
+</body>
+</html>

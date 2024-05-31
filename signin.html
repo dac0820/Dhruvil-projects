@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+    <title>Document</title>
+</head>
+<body ><div class="content">
+    <logo >
+        
+    </logo>
+
+        <form>
+            <h1 style="text-align: center;">-:signin:-</h1>
+            <hr>
+            <br><label style="margin-left: 5mm;"> Enter name:-</label>
+            <input type="text" id="nameInput" placeholder="name">
+            <br>
+            <br><label style="margin-left: 5mm;"> Enter date of birth:-</label>
+            <input type="date" placeholder="age">
+            <br>
+            <br><label style="margin-left: 5mm;"> Enter gender:-</label>
+            <input type="radio" placeholder="gender" value="male">male
+            <input type="radio" placeholder="gender" value="male">female
+            <br>
+            <br><label style="margin-left: 5mm;"> Enter email:-</label>
+            <input type="email" placeholder="email">
+            <br>
+            <br><label style="margin-left: 5mm;"> Enter phone number:-</label>
+            <input type="tel" placeholder="phone">
+            <br>
+            <br><label style="margin-left: 5mm;"> Enter password:-</label>
+            <input type="password" id="passwordInput" placeholder="password">
+            <hr>
+            <center><a href="home page.html"><button id="submitButton" type="button" disabled>Submit</button></a>
+            </center>
+         </form>
+         <span class="details">
+            <details>
+            <summary>Detail of students</summary>
+            <summary>Topic:- Replica of IPL website</summary>
+            <summary>1)Name:- CHANDARIYA DHRUVIL A</summary>
+            <summary>  Enr. no.:-236250307015</summary>
+            <summary>2)Name:- KAVAIYA DHRUVIL A</summary>
+            <summary>  Enr. no.:-236250307055</summary>
+            <summary>3)Name:- KANZARIYA RAJ N</summary>
+            <summary>  Enr. no.:-236250307054</summary>
+        </details>
+        </span>
+    </div>
+       <script>
+        const nameInput = document.getElementById('nameInput');
+        const passwordInput = document.getElementById('passwordInput');
+        const submitButton = document.getElementById('submitButton');
+
+        // Enable submit button only if both name and password are entered
+        nameInput.addEventListener('input', toggleSubmitButton);
+        passwordInput.addEventListener('input', toggleSubmitButton);
+
+        function toggleSubmitButton() {
+            if (nameInput.value && passwordInput.value) {
+                submitButton.removeAttribute('disabled');
+            } else {
+                submitButton.setAttribute('disabled', 'true');
+            }
+        }
+    </script>
+</body>
+</html>

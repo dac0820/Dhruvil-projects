@@ -1,0 +1,78 @@
+
+  body {
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.DXNDJzjBE_PWMH1OG38uvgHaFS&pid=Api&rs=1&c=1&qlt=95&w=147&h=105);
+  }
+  h1{
+   color:blue;
+ text-align: center;
+  background-color: #ADD8E6;
+  
+    
+  }
+ .hedder{
+    color :#ffc107;
+    background-color: aqua;
+ }
+ .navbar {
+  width: 100%;
+  background-color: #333; /* Dark background for the navbar */
+  overflow: hidden;
+}
+
+.navbar a {
+  margin-top: 0%;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.home {
+  float: left;
+}
+.navbar a.login {
+  float: right;
+}
+
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .player-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(239, 0, 0, 0.1);
+    transition: all 1s ease;
+  }
+  
+  .player-box img {
+    width: 200px;
+    height: 250px;
+    border-radius: 75%;
+  }
+  
+  .player-box p {
+    margin-top: 20px;
+  }
+  
+  .best {
+    background-color: lightblue; /* Set color for the best player box */
+  }
+  
+  .best:hover {
+    transform: scale(1.1); /* Add animation on hover */
+  }
+  

@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://i.redd.it/ghw0zt6cmroc1.jpeg);
+    background-size: 5cm;
+  }
+  h1{
+   color: #364973;
+ text-align: center;
+  background-color: #efbc00;
+    
+  }
+ .hedder{
+    color :#ffc107;
+    background-color: aqua;
+ }
+ 
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .player-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(195, 50, 50, 0.1);
+    transition: all 1s ease;
+  }
+  
+  .player-box img {
+    width: 200px;
+    height: 250px;
+    border-radius: 75%;
+  }
+  
+  .player-box p {
+    margin-top: 20px;
+  }
+  
+  .best {
+    background-color: rgba(85, 88, 161, 0.858); /* Set color for the best player box */
+  }
+  
+  .best:hover {
+    transform: scale(1.1); /* Add animation on hover */
+  }
+  

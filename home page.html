@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL Home</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(https://www.zingoy.com/blog/wp-content/uploads/2020/03/imgonline-com-ua-resize-qw5HtwPhEWJ-1024x530.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars due to video overflow */
+  }
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place video behind other content */
+  }
+  .header {
+    margin-top: 0;
+    text-align: justify;
+    background-color: #001f3f;
+    color: #fff;
+    padding-bottom:  20px;
+    text-align: center;
+    position: relative;
+  }
+  .login-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .child-page {
+    width: 400 px;
+    height: 250px;
+    padding: 10px;
+    margin: 50px;
+    border: 5px solid #e4d8d8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.626);
+    
+  }
+  .child-page:hover {
+    transform: translateY(-5px);
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .animated {
+    animation: fadeIn 1s;
+  }
+  .image{
+    width: 400px;
+    height: 250px;
+    color: rgba(0,0,0,0.2);
+  }
+  h1{
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="iplvideo9.mp4" type="video/mp4">
+        <!-- Add additional video formats (e.g., WebM, Ogg) for broader browser support -->
+      </video>
+    
+<div class="header">
+  <h1>Welcome to IPL</h1>
+  <button class="login-btn">Login</button>
+</div>
+<div class="main-content animated">
+  <div class="child-page">
+  
+    <a href="matchschedule.html"><img class="image" src="matchai.jpeg"></a>
+    <br><p style="color: antiquewhite;">matchschedule</p>
+    
+  </div>
+  <div class="child-page" onclick="window.location.href='match-schedules.html';">
+    <a href="team.html"><img class="image" src="teamsai.jpeg"></a>
+    <br><p style="color: antiquewhite;">teams</p>
+    
+</a>
+</div>
+</div>
+</body>
+</html>

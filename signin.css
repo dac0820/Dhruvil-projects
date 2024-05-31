@@ -1,0 +1,58 @@
+body{
+    background-image: url('signin.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-position-x: center;
+}
+button{
+    background-color: rgb(17, 131, 224);
+    text-decoration: black;
+    font-size: large;
+    width: 20px;font-size: 0.5px;
+    align-self: center;
+    height: 20px;
+    transition: width 3s;
+    transition-property: margin-right ;
+    border-radius: 6px;
+}
+button:hover{
+        text-shadow: 2mm;
+        width: 60px;
+        transition: 2s ease-in-out;
+        height: 30px;
+        font-size: 10px;    
+    }
+
+logo{
+    background-image: url('ipl.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-content: center;height: 50mm;    width: 90mm; 
+    background-position: -5px;
+}
+hr{
+   height: 2px;
+   color: black;
+}
+form{
+    bottom: 60px;
+    font-style:normal;
+    border-style:double;
+    border-image: url(back.jpg);
+    border-image-slice: 1;
+    border-width: 1mm;
+}
+.details{
+    bottom: 10px;
+    align-self: right;
+}
+center{
+    margin-left:40%;
+    margin-right: 40%;
+    height: 35px; 
+    width: 60px;
+
+}

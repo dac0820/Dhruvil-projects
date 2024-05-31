@@ -1,0 +1,116 @@
+body{
+    height: 150vh;
+    background-image: url("465641457.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+img{
+background-color: white;
+}
+.background h1{
+    font-size: 60px;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10 rgba(0, 0, 0, 0.5);
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+header {
+    color:white;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+}
+
+.h2 {
+    text-align: black;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color:gray
+    ;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(4, 3, 2, 0.868);
+}
+
+nav ul li a:hover {
+    font-size: 1.08rem;
+    color: white;
+}
+
+.firstsection  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4.5rem;
+    margin:80px 0;
+}
+.firstsection:hover {
+   width: 100%;
+   color: black;
+
+}
+.purple {
+    color: rgba(118, 11, 218, 0.71);
+}
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    font-style: italic;
+    color: rgb(11, 87, 228);
+}
+main hr{
+    border: 0;
+    background: #1b10e0;
+    height: 4.3px;
+    margin: 60px 84px;
+}
+.secondsection h1{
+  font-size: 1.8rem;
+  height: 80vh;
+}
+.text-purple{
+    color:purple;
+}
+a{
+color: #1b10e0;
+}
+.secondsection ul li{
+list-style-type: none;
+margin: 30px;
+}
+.secondsection ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.secondsection ul li a:hover{
+font-size: 1.05rem;
+color: white;
+font-size: 25px;
+}
+.text-purple{
+font-size: 1.5rem;
+}

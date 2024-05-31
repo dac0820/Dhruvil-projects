@@ -1,0 +1,190 @@
+body {
+    background-image: url('backgroundtheame.jpg');
+    z-index: -1;
+    background-size: 100%;
+    justify-content: space-evenly;
+    background-repeat: repeat-y;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.navbar {
+    width: 100%;,,
+    background-color: #333; /* Dark background for the navbar */
+    overflow: hidden;
+  }
+
+  .navbar a {
+    margin-top: 0%;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navbar a.home {
+    float: left;
+  }
+  .navbar a.login {
+    float: right;
+  }
+
+.shade{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.match-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: left;
+    animation: fadeIn 3s ease-in-out;
+    box-sizing: border-box;
+    border: 1mm solid rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0,0.8);
+    border-radius: 18px;
+    cursor: pointer;
+    position: relative; 
+    margin-bottom: 35px;
+    
+}
+.match-container::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    background: linear-gradient(
+
+        #f79533,
+        #f37055,
+        #ef4e7b,
+        #a167ab,
+        #5073b8,
+        #1098ad,
+        #07b39b,
+        #6fba82,
+        #07b39b,
+        #1098ad,
+        #5073b8,
+        #a167ab,
+        #ef4e7b,
+        #f37055,
+        #f79533
+    );
+    border-radius: inherit;
+    z-index: -1;
+    filter: blur(30px);
+    background-size: 300% 300%;
+}
+.match-container:hover{
+    width: 750px;
+    transition-property: all;
+    transition:2s ease-out ;
+}
+.match-container:hover::after {
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 300% 300%;
+    }
+}
+
+.team-logos {
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.team-logo1{
+    left:20cm;
+    width: 230px;
+    height: 190px;
+    margin-right:  50px;
+}
+
+.team-logo2{
+    left: 10cm;
+    width: 230px;
+    height: 190px;
+    margin-left: 50px;
+}
+.team-logo2:hover{
+    width: 240px;
+    transition: 1s ease-in-out;
+    height: 200px;    
+}
+.team-logo1:hover{
+    width: 240px;
+    transition: 1s ease-in-out;
+    height: 200px;    
+}
+.detail{
+    text-align: left;
+    color: rgb(233, 63, 6);
+    font-size: 16px;
+}
+.signinlogo{
+    background-image: url(signinlogo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height:40px;
+    width: 40px;
+    display: flex;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+hr{
+    width: 100%;
+    height: 1px;
+    border: 1;
+    border-top: 1px solid rgba(245, 241, 241);
+    margin: 20px 0;
+}
+@keyframes hr {
+    0%{
+        width: 0%;
+        transform: translateX(0);
+    }
+    100%{
+        width: 100%;
+        transform: translateX(100%);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
